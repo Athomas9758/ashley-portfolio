@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Store Case Study | Ashley Thomas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Ashley Thomas</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h2>Pizza Store Database Case Study</h2>
+      <p>A 3NF-compliant database system with PHP/MySQL integration for order management.</p>
+    </section>
+
+    <section class="resume-section">
+      <h3>Project Overview</h3>
+      <p>
+        I designed and developed a fully functional database system for a pizza store to efficiently manage orders and customer data. The core deliverable was a <strong>3NF-compliant relational database</strong> built with MySQL, paired with a PHP front-end for data entry and management through user-friendly forms.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h3>Goals</h3>
+      <ul>
+        <li>Design a normalized database schema that minimizes data redundancy and ensures data integrity by achieving Third Normal Form (3NF).</li>
+        <li>Create a front-end interface using PHP for managing pizzas, customers, orders, and order details.</li>
+        <li>Implement robust data validation and relationship management without relying on auto-increment keys.</li>
+        <li>Support essential pizza store operations: placing orders, updating menus, tracking customers, and reviewing order histories.</li>
+      </ul>
+    </section>
+
+    <section class="resume-section">
+      <h3>Database Design</h3>
+      <div class="resume-item">
+        <h4>Entities &amp; Relationships</h4>
+        <ul>
+          <li><strong>Customers:</strong> Stores customer details with a unique customer ID.</li>
+          <li><strong>Pizzas:</strong> Contains pizza types, sizes, and prices.</li>
+          <li><strong>Orders:</strong> Represents each order placed by a customer with an order ID, date/time, and status.</li>
+          <li><strong>Order_Items:</strong> Line items detailing which pizzas and quantities are included in each order.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>Normalization</h4>
+        <ul>
+          <li>Each table was designed to eliminate duplicate data and ensure atomicity of fields.</li>
+          <li>The schema adheres strictly to 3NF by:
+            <ul>
+              <li>Ensuring no partial dependencies on composite keys.</li>
+              <li>Eliminating transitive dependencies to maintain data integrity.</li>
+            </ul>
+          </li>
+          <li>Primary keys were manually assigned, avoiding auto-increment, to satisfy project constraints.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h3>Front-End Implementation</h3>
+
+      <div class="resume-item">
+        <h4>Forms and PHP</h4>
+        <ul>
+          <li>Created PHP forms for adding, updating, and deleting records across all tables.</li>
+          <li>Included input validation to prevent invalid or incomplete data from entering the system.</li>
+          <li>Used dropdowns and input fields for smooth selection of pizza types and customer IDs.</li>
+          <li>Used prepared statements to enhance database security and prevent SQL injection.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>User Experience</h4>
+        <p>
+          The interface was kept simple and intuitive, with clear visual feedback for success or error states. The focus was on functionality, accessibility, and reducing friction in the ordering workflow.
+        </p>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h3>Challenges &amp; Solutions</h3>
+      <ul>
+        <li><strong>Maintaining 3NF without auto-increment:</strong> Manually managed keys by tracking max IDs and incrementing them programmatically.</li>
+        <li><strong>Validation:</strong> Used both client-side (HTML5) and server-side (PHP) validation to maintain data integrity.</li>
+        <li><strong>Form usability:</strong> Designed for clarity and error-prevention through iterative user testing and refinement.</li>
+      </ul>
+    </section>
+
+    <section class="resume-section">
+      <h3>Results &amp; Learnings</h3>
+      <ul>
+        <li>Gained experience designing normalized databases that meet real-world standards for efficiency and integrity.</li>
+        <li>Built a working CRUD interface integrated with MySQL and PHP logic.</li>
+        <li>Deepened my understanding of security, validation, and relational data modeling.</li>
+      </ul>
+      <p>
+        The Pizza Store Database is now a scalable, maintainable system capable of supporting daily pizza ordering operations with minimal risk of data anomalies.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h3>Future Enhancements</h3>
+      <ul>
+        <li>Add reporting features for sales trends and customer insights.</li>
+        <li>Integrate user authentication for employee roles and permissions.</li>
+        <li>Enhance interactivity with JavaScript for real-time form validation and dynamic price calculations.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ashley Thomas. All rights reserved.</p>
+  </footer>
+</body>
+</html>
